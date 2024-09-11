@@ -4,17 +4,14 @@
 
 
 //необходимо получить элемент списка, после сравнить его с ключами в объекте, при нахождении сходства, заменить значение
-function Replace(arr, value, obj) {
+function replace(arr, value, obj) {
     let newObj = obj;
 
     for (let i = 0; i < arr.length - 1; i++) {
-        const key = arr[i];
-
-        if (typeof newObj[key] !== "object") {
-            console.log("worked", typeof obj[key])
+        let key = arr[i];
+        if (typeof newObj[key] !== "object" || newObj[key] === null) {
             newObj[key] = {};
         }
-        
         newObj = newObj[key];
     }
     newObj[arr[arr.length - 1]] = value;
@@ -22,8 +19,8 @@ function Replace(arr, value, obj) {
 }
 
 
-const obj = { 
-    name : "Sasha"
+const obj = {
+    
 };
 
-console.log(Replace(["user", "name"], "Sam", obj)); 
+console.log(replace(["user", "name"], "Sam", obj)); 
