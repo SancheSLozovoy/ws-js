@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
+    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.iconTheme": "vs-seti",
+    "editor.semanticHighlighting.enabled": "configuredByTheme",
+    "window.autoDetectColorScheme": false
+}
