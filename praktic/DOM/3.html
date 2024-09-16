@@ -1,0 +1,35 @@
+<!-- Напишите функцию JavaScript для добавления строк в таблицу. -->
+
+<!DOCTYPE html>
+<html>
+  <head><meta charset=utf-8 />
+    <title>Insert row in a table - w3resource</title>
+  </head>
+  <body>
+    <table id="sampleTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+      </tr>
+      <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+      </tr>
+    </table>
+    <br>
+    <input type="button" onclick="insert_Row()" value="Insert row"> 
+  </body>
+  <script>
+    let table = document.getElementById('sampleTable');
+    function insert_Row(){
+        let rowLength = table.rows.length + 1;
+        let row = document.createElement('tr');
+        let rowContent = document.createElement('td');
+        let rowContent2 = document.createElement('td');
+        rowContent.textContent = `Row${rowLength} cell1`
+        rowContent2.textContent = `Row${rowLength} cell2`
+        row.append(rowContent, rowContent2)
+        table.append(row)
+    }
+  </script>
+</html>

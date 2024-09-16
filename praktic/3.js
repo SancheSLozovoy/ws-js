@@ -20,7 +20,9 @@ function replace(arr, value, obj) {
 
 
 const obj = {
-    
+    user: { 
+        name: 'Sasha' 
+    } 
 };
 
 console.log(replace(["user", "name"], "Sam", obj)); 
